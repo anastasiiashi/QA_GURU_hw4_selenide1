@@ -18,7 +18,6 @@ public class GithubTest {
         //Проверяем, есть ли упоминание JUnit5 на странице
         $("#wiki-body").shouldHave(text("JUnit5"));
 
-
     }
 
 }
