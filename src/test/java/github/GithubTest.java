@@ -17,7 +17,7 @@ public class GithubTest {
         $(byText("Soft assertions")).click();
         //Проверяем, есть ли упоминание JUnit5 на странице
         $("#wiki-body").shouldHave(text("JUnit5"));
-        sleep(7000);
+
 
     }
 
