@@ -13,8 +13,10 @@ public class GithubTest {
         open("https://github.com/selenide/selenide");
         //Кликаем по вкладке Wiki
         $(byText("Wiki")).click();
-        //Кликаем по пунку Soft assertions
-        $(byText("Soft assertions")).click();
+        //Вбиваем значение SoftAssertions в строку поиска страниц
+        $("#wiki-pages-filter").setValue("SoftAssertions");
+        //Кликаем по странице SoftAssertions
+        $("[href='/selenide/selenide/wiki/SoftAssertions']").click();
         //Проверяем, есть ли упоминание JUnit5 на странице
         $("#wiki-body").shouldHave(text("JUnit5"));
 
