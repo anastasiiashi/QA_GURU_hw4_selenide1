@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class HerokuappTests {
     @Test
-    void atobtest() {
+    void aToBTest() {
         //Открываем страницу
         open("https://the-internet.herokuapp.com/drag_and_drop");
         //Перемещаем квадраты
